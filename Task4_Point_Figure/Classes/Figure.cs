@@ -44,7 +44,6 @@ class Figure
     }
 
     // Method-field of Properties of the Figure object.
-    public Point Point1
     { get { return _point1; } set { _point1 = value; } }
     public Point Point2
     { get { return _point2; } set { _point2 = value; } }
@@ -101,12 +100,6 @@ class Figure
             // показано в предыдущих разделах, статический анализ определяет состояние NULL локальных переменных,
             // чтобы узнать, являются ли они maybe-null.
 
-            // Иногда необходимо переопределить предупреждение, если известно, что переменная не имеет
-            // значение NULL, но компилятор определяет ее состояние NULL как maybe-null. Используйте оператор,
-            // допускающий значение NULL ! перед именем переменной, чтобы принудительно задать для состояния
-            // NULL not-null.  
-            #endregion
-            return Math.Sqrt(Math.Pow(point2!.X - point1!.X, 2) + Math.Pow(point2.Y - point1.Y, 2));
         }
 
         else
@@ -128,9 +121,6 @@ class Figure
 
         if (isWholeness)
         {
-            _perimeter = GetLengthSide(point1!, point2!) +
-                              GetLengthSide(point2!, point3!) +
-                              GetLengthSide(point3!, point1!);
         }
 
         else
@@ -154,10 +144,6 @@ class Figure
 
         if (isWholeness)
         {
-            _perimeter = GetLengthSide(point1!, point2!) +
-                              GetLengthSide(point2!, point3!) +
-                              GetLengthSide(point3!, point4!) +
-                              GetLengthSide(point4!, point1!);
         }
 
         else

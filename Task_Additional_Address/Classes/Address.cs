@@ -1,12 +1,12 @@
-﻿// !!!Realize the Object-oriented programming principle - Encapsulate (hiding the implementation).
-// Encapsulate data set and methods for working on it as an object.
-// Declarate class of this kind of objects.
+﻿    // !!!Realize the Object-oriented programming principle - Encapsulate (hiding the implementation).
+    // Encapsulate data set and methods for working on it as an object.
+    // Declarate class of this kind of objects.
 
-// Auto declarate the method to constructor an object of this class.
+    // Auto declarate the method to constructor an object of this class.
 
-// Declaration of the Methods-fields to access to fields of the object.
-// This is contrary to encapsulation!!!
-class Address
+    // Declaration of the Methods-fields to access to fields of the object.
+    // This is contrary to encapsulation!!!
+    class Address
 {   // Declare state fields of the Address instance.
     // Using default value of the type.
     private string _index = default!;

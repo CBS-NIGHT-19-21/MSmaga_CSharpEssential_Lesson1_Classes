@@ -21,6 +21,7 @@ class Point
     // Constructor of the Point object.
     public Point(string name, int x, int y)
     {
+        _name = name;
         _x = x;
         _y = y;
         _name = name;
