@@ -36,7 +36,7 @@ Console.WriteLine($"{point4.Name} : Х = {point4.X},  Y = {point4.Y};");
 // using a call to the custom constructor
 // with actual parameters - objects point1, point2, point3, point4.
 Figure figure1 = new Figure(point1, point2, point3, point4);
- 
+
 // Call the GetLengthSide method of the Figure object containing the methods
 // through an instance of figure1 containing a reference to the object
 // and assigning to the Length property of the figure1 object of the Figure class.
