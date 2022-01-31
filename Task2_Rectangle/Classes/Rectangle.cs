@@ -10,24 +10,12 @@
     // Declaration of the Method-field Area (Properties)
     // of the class object (class member),
     // with an open access modifier for access from outside this class.
-    public double Area
-    {
-        get
-        {
-            return _area;
-        }
-    }
+    public double Area { get { return _area; } }
 
     // Declaration of the Method-field Perimeter (Properties)
     // of the class object (class member),
     // with an open access modifier for access from outside this class.
-    public double Perimeter
-    {
-        get
-        {
-            return _perimeter;
-        }
-    }
+    public double Perimeter { get { return _perimeter; } }
 
     // Declare a custom class constructor,
     // with input formal parameters
@@ -57,10 +45,7 @@
     /// Calc Area
     /// </summary>
     /// <returns>double</returns>
-    private double CalcArea()
-    {
-        return _side1 * _side2;
-    }
+    private double CalcArea() => _side1 * _side2;
 
     // Declaration of the CalcPerimeter() method - a member of the class,
     // with a private access modifier for access from outside this class,
@@ -70,9 +55,7 @@
     /// Calcs perimeter
     /// </summary>
     /// <returns>double</returns>
-    private double CalcPerimeter()
-    {
-        return 2 * (_side1 + _side2);
-    }
+    private double CalcPerimeter() => 2 * (_side1 + _side2);
+
 }
 

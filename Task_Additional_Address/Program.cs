@@ -20,7 +20,7 @@
 
         Address address = new()
         {
-            Index = "063", 
+            Index = "063",
             Country = "Ukraine",
             City = "Kyev",
             Street = "Svobody",
@@ -30,7 +30,6 @@
 
         // Show the auto properties of the instance.
         address.Show();
-
 
         // Delay.
         Console.ReadKey();

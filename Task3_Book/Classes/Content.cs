@@ -15,7 +15,7 @@
 class Content
 {
     // The state field of the Content object.
-    private string _text = default!;
+    private string? _text;
 
     // Method-field Property of the Content object.
     public string Text
@@ -33,16 +33,10 @@ class Content
             }
         }
         set
-        {
-            _text = value;
-        }
+        { _text = value; }
     }
 
     // Method of the Content object.
-    public void Show()
-    {
-        Console.WriteLine(Text);
-    }
-
+    public void Show() => Console.WriteLine(Text);
 }
 
