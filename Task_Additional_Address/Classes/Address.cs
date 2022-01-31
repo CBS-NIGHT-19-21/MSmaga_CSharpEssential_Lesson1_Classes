@@ -19,7 +19,7 @@ class Address
     private string? _apartment;
     public string Index { get { return _index!; } set { _index = value; } }
     public string Country { get { return _country!; } set { _country = value; } }
-    public String City { get { return _city!; } set { _city = value; } }
+    public string City { get { return _city!; } set { _city = value; } }
     public string Street { get { return _street!; } set { _street = value; } }
     public string House { get { return _house!; } set { _house = value; } }
     public string Apartment { get { return _apartment!; } set { _apartment = value; } }
