@@ -1,4 +1,5 @@
-﻿// !!!Realize the Object-oriented programming principle - Encapsulate (hiding the implementation).
+﻿# region
+// !!!Realize the Object-oriented programming principle - Encapsulate (hiding the implementation).
 // Encapsulate data set and methods for working on it as an object.
 // Declarate class of this kind of objects.
 
@@ -6,10 +7,10 @@
 
 // Declaration of the Methods-fields to access to fields of the object.
 // This is contrary to encapsulation!!!
+# endregion
 class Address
 {
     // Method-fields of Properties(Attributes) of the Address object.
-
 
     private string? _index;
     private string? _country;
