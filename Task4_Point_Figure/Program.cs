@@ -2,11 +2,9 @@
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             #region Задание 4
-            // Используя Visual Studio, создайте проект по шаблону Console Application. 
-            // Требуется: 
             // Создать классы Point и Figure. 
             // Класс Point должен содержать два целочисленных поля и одно строковое поле. 
             // Создать три свойства с одним методом доступа get. 
@@ -26,10 +24,10 @@
             // using a call to the custom constructor
             // with actual parameters "Point_1", 13, 19 ...
 
-            Point point1 = new Point("Tочка_1", 13, 19);
-            Point point2 = new Point("Tочка_2", 13, 51);
-            Point point3 = new Point("Tочка_3", 17, 51);
-            Point point4 = new Point("Tочка_4", 17, 19);
+            Point point1 = new ("Tочка_1", 13, 19);
+            Point point2 = new ("Tочка_2", 13, 51);
+            Point point3 = new ("Tочка_3", 17, 51);
+            Point point4 = new ("Tочка_4", 17, 19);
 
             // Accessing properties of point1-5 instances and output to the console.
             Console.WriteLine($"{point1.Name} : Х = {point1.X},  Y = {point1.Y};");
@@ -41,7 +39,7 @@
             // Get a reference to the address of the instance on the heap (Heap)
             // using a call to the custom constructor
             // with actual parameters - objects point1, point2, point3, point4.
-            Figure figure1 = new Figure(point1, point2, point3, point4);
+            Figure figure1 = new (point1, point2, point3, point4);
 
             // Call the GetLengthSide method of the Figure object containing the methods
             // through an instance of figure1 containing a reference to the object
@@ -52,10 +50,10 @@
 
             // Call the CalcPerimeter method of the Figure object containing the methods
             // through an instance of figure1 containing a reference to the object.
-            figure1.CalcPerimeter(point1, point2, point3, point4);
+            double perimeter = figure1.CalcPerimeter(point1, point2, point3, point4);
 
             // Display the Perimeter property of the figure1 instance.
-            Console.WriteLine($"\nPerimeter = {figure1.Perimeter};");
+            Console.WriteLine($"\nPerimeter = {perimeter};");
 
             #endregion
         }

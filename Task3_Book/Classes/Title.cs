@@ -12,7 +12,7 @@
 class Title
 {
     // State field of the Title object.
-    private string _text = default!;
+    private string? _text;
 
     // Method-field of Properties of the Title object.
     public string Text
@@ -37,9 +37,6 @@ class Title
     }
 
     // Method of the Title object.
-    public void Show()
-    {
-        Console.WriteLine(Text);
-    }
+    public void Show() => Console.WriteLine(Text);  
 }
 

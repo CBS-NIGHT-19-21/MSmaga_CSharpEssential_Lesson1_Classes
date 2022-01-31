@@ -16,7 +16,7 @@
 class Author
 {
     // Field state of the Author object.
-    private string _text = default!;
+    private string? _text;
 
     // Method-field Property of the Author object.
     public string Text
@@ -34,17 +34,11 @@ class Author
             }
         }
 
-        set
-        {
-            _text = value;
-        }
+        set { _text = value; }
     }
 
     // Method of the Author class object.
-    public void Show()
-    {
-        Console.WriteLine(Text);
-    }
+    public void Show() => Console.WriteLine(Text);
 }
 
 

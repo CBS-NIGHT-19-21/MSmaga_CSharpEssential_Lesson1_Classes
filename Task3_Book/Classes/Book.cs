@@ -1,11 +1,10 @@
-﻿
-class Book
+﻿class Book
 {
     // Create the fields of the Book class as objects
     // of the Title, Author, Content classes.
-    private Title _title = default!;
-    private Author _author = default!;
-    private Content _content = default!;
+    private readonly Title _title = default!;
+    private readonly Author _author = default!;
+    private readonly Content _content = default!;
 
     // Create a constructor method of the Book class to initialize its fields
     // as objects of classes Title, Author, Content.
@@ -21,20 +20,10 @@ class Book
 
     // Declare the Author, Content Properties of the Book object.
     public string Author
-    {
-        set
-        {
-            _author.Text = value;
-        }
-    }
+    { set { _author.Text = value; } }
 
     public string Content
-    {
-        set
-        {
-            _content.Text = value;
-        }
-    }
+    { set { _content.Text = value; } }
 
     // Create a method of the Book object as
     // calls to methods of objects - title, author, content of the Book properties.
